@@ -5,6 +5,8 @@
         <Nullable>enable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>
         <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+        <DockerComposeProjectPath>..\..\..\docker-compose.dcproj</DockerComposeProjectPath>
+        <DockerfileContext>..\..\..</DockerfileContext>
     </PropertyGroup>
 
     <ItemGroup>
@@ -19,6 +21,7 @@
 
     <ItemGroup>
       <PackageReference Include="Carter" Version="8.2.1" />
+      <PackageReference Include="Marten" Version="8.11.0" />
     </ItemGroup>
 
 </Project>
