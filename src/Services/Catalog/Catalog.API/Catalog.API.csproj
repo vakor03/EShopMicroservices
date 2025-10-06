@@ -20,4 +20,8 @@
       <PackageReference Include="Marten" Version="8.11.0" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="certs\" />
+    </ItemGroup>
+
 </Project>

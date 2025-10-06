@@ -10,6 +10,8 @@ builder.Services.AddMediatR(config => {
     config.AddOpenBehavior(typeof(ValidationBehaviour<,>));
     config.AddOpenBehavior(typeof(LoggingBehaviour<,>));
 });
+
+builder.WebHost.ConfigureKestrel(options => { });
 builder.Services.AddValidatorsFromAssembly(assembly);
 
 builder.Services.AddCarter();
